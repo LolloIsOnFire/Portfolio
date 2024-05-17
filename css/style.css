@@ -17,6 +17,10 @@
     --editing-secondary: #ebe98165;
     --autocad-main: #6d3304b2;
     --autocad-secondary: #ebb48165;
+    --BLS-D-main: #6d0404b2;
+    --BLS-D-secondary: #eb818165;
+    --PCTO-main: #2b1001b2;
+    --PCTO-secondary: #5c3b2c65;
 }
 
 html, body {
@@ -135,8 +139,41 @@ nav span {
     border-top-right-radius: 1.4rem;
   }
 
+/* traffic light */
 
+.traffic-light {
+    width: 5rem;
+    height: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+}
 
+.red, .yellow, .green {
+    width: 1rem;
+    height: 1rem;
+    background-color: #fff;
+    border-radius: 50%;
+    
+}
+
+.traffic-light .red, .traffic-light .yellow, .traffic-light .green {
+    filter: blur(0.9px);
+}
+
+.red {
+    background-color: #ff605c;
+    box-shadow: 0 0 20px #ff2522;
+}
+
+.yellow {
+    background-color: #ffbd44;
+    box-shadow: 0 0 20px #f09f08;
+}
+
+.green {
+    background-color: #00ca4e;
+    box-shadow: 0 0 20px #03d353;
+}
 
 /* arrow */
 
@@ -167,7 +204,7 @@ nav span {
 
 /* Expleo Section */
 
-.mac-window-2 {
+.mac-window-2, .mac-window-3, .mac-window-4, .mac-window-5, .mac-window-6, .mac-window-7, .mac-window-8  {
     width: 100%;
     margin-top: 10%;
     border: 0.7em solid var(--box-border);
@@ -176,11 +213,11 @@ nav span {
     transition: background 0.3s ease;
 }
 
-.main-section-2 {
+.main-section-2, .main-section-3, .main-section-4, .main-section-5, .main-section-6, .main-section-7, .main-section-8 {
     border-radius: 1.4rem;
 }
 
-.main-section-2 h2{
+.main-section-2 h2, .main-section-3 h2, .main-section-4 h2, .main-section-5 h2, .main-section-6 h2, .main-section-7 h2, .main-section-8 h2 {
     margin-top: 2%;
     margin-left: 2%;
     color: #ffffff;
@@ -188,7 +225,7 @@ nav span {
     text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 }
 
-.main-section-2 p {
+.main-section-2 p, .main-section-3 p, .main-section-4 p, .main-section-5 p, .main-section-6 p, .main-section-7 p, .main-section-8 p {
     margin-top: 2%;
     margin-left: 2%;
     color: #ffffff;
@@ -196,7 +233,7 @@ nav span {
     text-shadow: 0 0 2px #fff, 0 0 2px #fff;
 }
 
-.main-section-2 img {
+.main-section-2 img, .main-section-3 img, .main-section-4 img, .main-section-5 img, .main-section-6 img, .main-section-7 img, .main-section-8 img  {
     margin-top: 10%;
     margin-left: 5%;
     margin-bottom: 5%;
@@ -209,7 +246,7 @@ nav span {
     background: radial-gradient(circle, var(--expleo-secondary) 0%, var(--expleo-main) 100%);
 }
 
-.main-section-2:hover img {
+.main-section-2:hover img, .main-section-3:hover img, .main-section-4:hover img, .main-section-5:hover img, .main-section-6:hover img, .main-section-7:hover img, .main-section-8:hover img{
     height: 200%; 
     transform: translateY(-5%); 
     
@@ -217,198 +254,38 @@ nav span {
 
 /* language section */
 
-.mac-window-3 {
-    width: 100%;
-    margin-top: 10%;
-    border: 0.7em solid var(--box-border);
-    border-radius: 2.2rem;
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.7), 0 0 2px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255), inset 0 0 2px rgb(255, 255, 255);
-    transition: background 0.3s ease;
-}
-
-.main-section-3 {
-    border-radius: 1.4rem;
-}
-
-.main-section-3 h2{
-    margin-top: 2%;
-    margin-left: 2%;
-    color: #ffffff;
-    font-size: 2rem;
-    text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-}
-
-.main-section-3 p {
-    margin-top: 2%;
-    margin-left: 2%;
-    color: #ffffff;
-    font-size: 1rem;
-    text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-}
-
-.main-section-3 img {
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-    width: 90%;
-    transition: height 0.3s ease, transform 0.5s ease; 
-    border-radius: 1.2rem;
-}
-
 .main-section-3:hover {
     background: radial-gradient(circle, var(--reference-secondary) 0%, var(--reference-main) 100%);
 }
 
-.main-section-3:hover img {
-    height: 200%; 
-    transform: translateY(-5%); 
-}
-
 /* arduino section */
-
-.mac-window-4 {
-    width: 100%;
-    margin-top: 10%;
-    border: 0.7em solid var(--box-border);
-    border-radius: 2.2rem;
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.7), 0 0 2px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255), inset 0 0 2px rgb(255, 255, 255);
-    transition: background 0.3s ease;
-}
-
-.main-section-4 {
-    border-radius: 1.4rem;
-}
-
-.main-section-4 h2{
-    margin-top: 2%;
-    margin-left: 2%;
-    color: #ffffff;
-    font-size: 2rem;
-    text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-}
-
-.main-section-4 p {
-    margin-top: 2%;
-    margin-left: 2%;
-    color: #ffffff;
-    font-size: 1rem;
-    text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-}
-
-.main-section-4 img {
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-    width: 90%;
-    transition: height 0.3s ease, transform 0.5s ease; 
-    border-radius: 1.2rem;
-}
 
 .main-section-4:hover {
     background: radial-gradient(circle, var(--arduino-secondary) 0%, var(--arduino-main) 100%);
 }
 
-.main-section-4:hover img {
-    height: 200%; 
-    transform: translateY(-5%); 
-}
-
 /* editing section */
-
-.mac-window-5 {
-    width: 100%;
-    margin-top: 10%;
-    border: 0.7em solid var(--box-border);
-    border-radius: 2.2rem;
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.7), 0 0 2px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255), inset 0 0 2px rgb(255, 255, 255);
-    transition: background 0.3s ease;
-}
-
-.main-section-5 {
-    border-radius: 1.4rem;
-}
-
-.main-section-5 h2{
-    margin-top: 2%;
-    margin-left: 2%;
-    color: #ffffff;
-    font-size: 2rem;
-    text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-}
-
-.main-section-5 p {
-    margin-top: 2%;
-    margin-left: 2%;
-    color: #ffffff;
-    font-size: 1rem;
-    text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-}
-
-.main-section-5 img {
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-    width: 90%;
-    transition: height 0.3s ease, transform 0.5s ease; 
-    border-radius: 1.2rem;
-}
 
 .main-section-5:hover {
     background: radial-gradient(circle, var(--editing-secondary) 0%, var(--editing-main) 100%);
 }
 
-.main-section-5:hover img {
-    height: 200%; 
-    transform: translateY(-5%); 
-}
-
 /* AutoCAD section */
-
-.mac-window-6 {
-    width: 100%;
-    margin-top: 10%;
-    border: 0.7em solid var(--box-border);
-    border-radius: 2.2rem;
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.7), 0 0 2px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255), inset 0 0 2px rgb(255, 255, 255);
-    transition: background 0.3s ease;
-}
-
-.main-section-6 {
-    border-radius: 1.4rem;
-}
-
-.main-section-6 h2{
-    margin-top: 2%;
-    margin-left: 2%;
-    color: #ffffff;
-    font-size: 2rem;
-    text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-}
-
-.main-section-6 p {
-    margin-top: 2%;
-    margin-left: 2%;
-    color: #ffffff;
-    font-size: 1rem;
-    text-shadow: 0 0 2px #fff, 0 0 2px #fff;
-}
-
-.main-section-6 img {
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-    width: 90%;
-    transition: height 0.3s ease, transform 0.5s ease; 
-    border-radius: 1.2rem;
-}
 
 .main-section-6:hover {
     background: radial-gradient(circle, var(--autocad-secondary) 0%, var(--autocad-main) 100%);
 }
 
-.main-section-6:hover img {
-    height: 200%; 
-    transform: translateY(-5%); 
+/* BLS-D section */
+
+.main-section-7:hover {
+    background: radial-gradient(circle, var(--BLS-D-secondary) 0%, var(--BLS-D-main) 100%);
+}
+
+/* PCTO section */
+
+.main-section-8:hover {
+    background: radial-gradient(circle, var(--PCTO-secondary) 0%, var(--PCTO-main) 100%);
 }
 
 /* footer */
@@ -418,7 +295,6 @@ hr {
     width: 100%;
     margin-top: 14%;
     box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #fff;
-    height: 5%;
 }
 
 footer {
