@@ -337,7 +337,217 @@ footer p {
     text-shadow: 0 0 2px #fff;
 }
 
+/* about */
+
+/* Stile specifico per la pagina "About" */
+.about-section {
+    padding: 2rem;
+    background: radial-gradient(circle, var(--lighter-black) 0%, var(--darker-black) 100%);
+    color: #ffffff;
+    border-radius: 2.2rem;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.7), 0 0 2px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255), inset 0 0 2px rgb(255, 255, 255);
+    margin-top: 2rem;
+}
+
+.main-section h1 {
+    color: #ffffff;
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #fff;
+}
+
+.main-section p {
+    padding: 2%;
+    margin-left: 5%;
+    font-size: 1.3rem;
+    margin-right: 4.5%;
+    text-align: left;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+
+@media screen and (max-width: 1399px) {
+    .mac-window h1 {
+        margin-top: 7%;
+        margin-left: 7%;
+        color: #ffffff;
+        font-size: 4.5rem;
+        text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 5px #fff, 0 0 10px;
+    }
+
+    .mac-window h3{
+        text-align: end;
+        font-size: 1.5rem;
+        margin-top: 15%;
+        margin-right: 4%;
+        color: #ffffff;
+        text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+        margin-bottom: 20%;
+    }
+
+    .arrow-down-animation {
+        position: absolute;
+        bottom: 9rem;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: bounce 2s infinite;
+    }
+
+    .arrow-down-animation i {
+        font-size: 1.8rem;
+        color: #ffffff;
+    }
+
+    nav{
+        position: fixed;
+        left: 42%;
+        top: 1rem;
+        bottom: 2rem;
+        width: 11.4rem;
+        height: 3rem;
+        background-color: rgba(35, 35, 35, 0.8);
+        backdrop-filter: blur(6px);
+        border-radius: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.7), 0 0 2px rgb(255, 255, 255);
+        z-index: 1;
+    }
+
+    .logo {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        z-index: 1; 
+        width: 4.5rem; 
+        height: auto; 
+        background-size: contain; 
+        background-repeat: no-repeat; 
+    }
+  }
+
+@media screen and (max-width: 1199px) {
+    .mac-window h1 {
+        margin-top: 7%;
+        margin-left: 7%;
+        color: #ffffff;
+        font-size: 4rem;
+        text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 5px #fff, 0 0 10px;
+    }
+
+    .mac-window h3{
+        text-align: end;
+        font-size: 1.5rem;
+        margin-top: 15%;
+        margin-right: 4%;
+        color: #ffffff;
+        text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+        margin-bottom: 20%;
+    }
+
+    .arrow-down-animation {
+        position: absolute;
+        bottom: 14rem;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: bounce 2s infinite;
+    }
+
+    .arrow-down-animation i {
+        font-size: 1.5rem;
+        color: #ffffff;
+    }
+
+    nav{
+        position: fixed;
+        left: 41%;
+        top: 1rem;
+        bottom: 2rem;
+        width: 11.4rem;
+        height: 3rem;
+        background-color: rgba(35, 35, 35, 0.8);
+        backdrop-filter: blur(6px);
+        border-radius: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.7), 0 0 2px rgb(255, 255, 255);
+        z-index: 1;
+    }
+
+    .logo {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        z-index: 1; 
+        width: 4.5rem; 
+        height: auto; 
+        background-size: contain; 
+        background-repeat: no-repeat; 
+    }
+  }
+
 /* phone interaction */
+@media screen and (max-width: 991px) {
+    .mac-window h1 {
+        margin-top: 7%;
+        margin-left: 7%;
+        color: #ffffff;
+        font-size: 2rem;
+        text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 5px #fff, 0 0 10px;
+    }
+
+    .mac-window h3{
+        text-align: end;
+        font-size: 1rem;
+        margin-top: 15%;
+        margin-right: 4%;
+        color: #ffffff;
+        text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+        margin-bottom: 20%;
+    }
+
+    .arrow-down-animation {
+        position: absolute;
+        bottom: 25rem;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: bounce 2s infinite;
+    }
+
+    .arrow-down-animation i {
+        font-size: 1rem;
+        color: #ffffff;
+    }
+
+    nav{
+        position: fixed;
+        left: 40%;
+        top: 1rem;
+        bottom: 2rem;
+        width: 11.4rem;
+        height: 3rem;
+        background-color: rgba(35, 35, 35, 0.8);
+        backdrop-filter: blur(6px);
+        border-radius: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.7), 0 0 2px rgb(255, 255, 255);
+        z-index: 1;
+    }
+
+    .logo {
+        position: fixed;
+        top: 1.5rem;
+        left: 1rem;
+        z-index: 1; 
+        width: 4rem; 
+        height: auto; 
+        background-size: contain; 
+        background-repeat: no-repeat; 
+    }
+  }
 
 @media screen and (max-width: 767px) {
     .mac-window h1 {
@@ -360,7 +570,7 @@ footer p {
 
     .arrow-down-animation {
         position: absolute;
-        bottom: 11.5rem;
+        bottom: 30rem;
         left: 50%;
         transform: translateX(-50%);
         animation: bounce 2s infinite;
@@ -373,7 +583,7 @@ footer p {
 
     nav{
         position: fixed;
-        left: 26.5%;
+        left: 34%;
         top: 1rem;
         bottom: 2rem;
         width: 11.4rem;
@@ -390,10 +600,10 @@ footer p {
 
     .logo {
         position: fixed;
-        top: 1.5rem;
+        top: 1rem;
         left: 1rem;
         z-index: 1; 
-        width: 2rem; 
+        width: 3rem; 
         height: auto; 
         background-size: contain; 
         background-repeat: no-repeat; 
