@@ -609,3 +609,64 @@ footer p {
         background-repeat: no-repeat; 
     }
   }
+
+  @media screen and (max-width: 576px) {
+    .mac-window h1 {
+        margin-top: 7%;
+        margin-left: 7%;
+        color: #ffffff;
+        font-size: 2rem;
+        text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 5px #fff, 0 0 10px;
+    }
+
+    .mac-window h3{
+        text-align: end;
+        font-size: 1rem;
+        margin-top: 15%;
+        margin-right: 4%;
+        color: #ffffff;
+        text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+        margin-bottom: 20%;
+    }
+
+    .arrow-down-animation {
+        position: absolute;
+        bottom: 10rem;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: bounce 2s infinite;
+    }
+
+    .arrow-down-animation i {
+        font-size: 1rem;
+        color: #ffffff;
+    }
+
+    nav{
+        position: fixed;
+        left: 25%;
+        top: 1rem;
+        bottom: 2rem;
+        width: 11.4rem;
+        height: 3rem;
+        background-color: rgba(35, 35, 35, 0.8);
+        backdrop-filter: blur(6px);
+        border-radius: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.7), 0 0 2px rgb(255, 255, 255);
+        z-index: 1;
+    }
+
+    .logo {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        z-index: 1; 
+        width: 2.6rem; 
+        height: auto; 
+        background-size: contain; 
+        background-repeat: no-repeat; 
+    }
+  }
