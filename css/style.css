@@ -337,6 +337,10 @@ footer p {
     text-shadow: 0 0 2px #fff;
 }
 
+footer a {
+    text-decoration: none;
+}
+
 /* about */
 
 /* Stile specifico per la pagina "About" */
